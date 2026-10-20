@@ -9,6 +9,8 @@ Shared, CMOR-free code for CMIP7 cmorization at BSC, used by the relay
 - `registry`: CMIP7 targets read from the BSC variable registry.
 - `cvstate`: tables staging and augmented CV in a state dir; no silent
   CV stubs.
+- `gaussian`: reduced Gaussian rows to a regular grid (linear in
+  longitude, or nearest for land/sea fields); OIFS and LPJG output.
 
 Content (the mapping XML) lives in bsc-variable-registry and is passed by
 path; this package reads it and never ships a copy.
