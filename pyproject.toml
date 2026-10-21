@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cmip7-cmor-common"
-version = "0.2.0"
-description = "Shared CMOR-free code for CMIP7 cmorization: bundles, coordinate reference, registry lookup, CV state, reduced Gaussian grids"
+version = "0.3.0"
+description = "Shared CMOR-free code for CMIP7 cmorization: bundles, coordinate reference, registry lookup, CV state, reduced Gaussian grids, LPJG output"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [

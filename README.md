@@ -8,8 +8,8 @@ another without pulling in its writer, so shared code lives here.
 | Consumer | Writer | Uses |
 |---|---|---|
 | recmorise-relay | CMOR | bundles, coordref |
-| ecemor | CMOR | registry, cvstate, gaussian; bundles, coordref planned |
-| pycmor (dev/cmip7-ecearth4) | xarray | gaussian; registry, cvstate planned |
+| ecemor | CMOR | registry, cvstate, gaussian, lpjg; bundles, coordref planned |
+| pycmor (dev/cmip7-ecearth4) | xarray | gaussian, lpjg; registry, cvstate planned |
 
 ## What belongs here
 
@@ -38,6 +38,8 @@ Model output: getting data ready for any writer.
 
 - `gaussian`: reduced Gaussian rows to a regular grid (linear in
   longitude, or nearest for land/sea fields); OIFS and LPJG output.
+- `lpjg`: LPJ-GUESS .out files (yearly, both monthly layouts, daily,
+  gzip) to a regular Gaussian grid, ocean NaN; numpy only.
 - `bundles`: years per output file and bundle planning.
 - `coordref`: persistent reference for the time-independent variables of
   a dataset (lat, lon, bounds, levels), compared with tolerance.
